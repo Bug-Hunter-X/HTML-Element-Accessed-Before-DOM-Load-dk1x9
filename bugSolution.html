@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will show up!
+  </div>
+
+  <script>
+    //This script uses the DOMContentLoaded event, ensuring the DOM is fully loaded before modifying the div
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById("myDiv").innerHTML = "This text replaces the original content.";
+    });
+  </script>
+</body>
+</html>
