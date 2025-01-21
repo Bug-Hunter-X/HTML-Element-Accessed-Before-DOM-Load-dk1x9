@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not show up!
+  </div>
+
+  <script>
+    //This script attempts to modify the content of the div with the ID "myDiv" before the div is fully loaded.
+    document.getElementById("myDiv").innerHTML = "This text should replace the original content.";
+  </script>
+</body>
+</html>
